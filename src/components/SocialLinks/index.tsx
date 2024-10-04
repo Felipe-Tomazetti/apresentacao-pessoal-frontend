@@ -1,5 +1,3 @@
-import React from "react";
-
 const SocialLinks = () => {
   const links = [
     { name: "LinkedIn", url: "https://linkedin.com" },

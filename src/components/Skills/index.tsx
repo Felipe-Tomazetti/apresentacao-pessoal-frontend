@@ -1,11 +1,9 @@
-import React from "react";
-
 const Skills = () => {
   const skills = ["JavaScript", "React", "Next.js", "TailwindCSS", "Node.js"];
 
   return (
     <section className="my-8">
-      <h2 className="text-2xl font-bold mb-4">Skills</h2>
+      <h2 className="text-2xl font-bold mb-4 text-white">Skills</h2>
       <ul className="grid grid-cols-2 gap-4">
         {skills.map((skill, index) => (
           <li
