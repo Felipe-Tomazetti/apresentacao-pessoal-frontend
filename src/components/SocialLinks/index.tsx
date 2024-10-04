@@ -1,27 +1,40 @@
-const SocialLinks = () => {
-  const links = [
-    { name: "LinkedIn", url: "https://linkedin.com" },
-    { name: "GitHub", url: "https://github.com" },
+import { motion } from "framer-motion";
+import StackIcon from "tech-stack-icons";
+
+export const SocialLinks = () => {
+  const socialLinks = [
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/felipe-tomazetti/",
+      icon: <StackIcon name="github" style={{ width: 30, height: 30 }} />,
+    },
+    {
+      name: "GitHub",
+      url: "https://github.com/felipe-tomazetti",
+      icon: <StackIcon name="github" style={{ width: 30, height: 30 }} />,
+    },
   ];
 
   return (
-    <section className="my-8">
-      <h2 className="text-2xl font-bold mb-4">Connect with Me</h2>
-      <div className="flex gap-4">
-        {links.map((link, index) => (
-          <a
-            key={index}
-            href={link.url}
-            className="bg-blue-600 text-white py-2 px-4 rounded-lg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {link.name}
-          </a>
-        ))}
+    <section className="py-12 bg-gray-800 text-white text-center">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-semibold mb-6">Se conecte comigo!</h2>
+        <div className="flex justify-center space-x-6">
+          {socialLinks.map((link, index) => (
+            <motion.a
+              key={link.name}
+              href={link.url}
+              target={"_blank"}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              className="text-xl hover:scale-105 transform transition-transform flex items-center gap-2"
+            >
+              {link.icon} {link.name}
+            </motion.a>
+          ))}
+        </div>
       </div>
     </section>
   );
 };
-
-export default SocialLinks;
