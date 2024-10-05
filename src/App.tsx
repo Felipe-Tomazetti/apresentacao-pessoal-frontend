@@ -11,10 +11,6 @@ const fadeInUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const staggerContainer = {
-  visible: { transition: { staggerChildren: 0.2 } },
-};
-
 function App() {
   return (
     <div className="min-h-screen p-6">
@@ -28,10 +24,10 @@ function App() {
         <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
           <Skills />
         </motion.div>
-        <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
+        <motion.div initial="hidden" animate="visible">
           <Projects />
         </motion.div>
-        <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
+        <motion.div initial="hidden" animate="visible">
           <SocialLinks />
         </motion.div>
       </div>

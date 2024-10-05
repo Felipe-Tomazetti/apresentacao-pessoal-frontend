@@ -46,9 +46,14 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-12 bg-gradient-to-r from-blue-500 to-transparent mt-2">
+    <motion.div
+      initial={{ x: "+20vw", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ type: "spring", stiffness: 30, duration: 3 }}
+      className="py-12 bg-gradient-to-r from-blue-500 to-transparent mt-2"
+    >
       <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold text-center mb-6">Skills</h2>
+        <h2 className="text-3xl font-semibold text-center mb-6">Habilidades</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {skills.map((skill, index) => (
             <motion.div
@@ -65,7 +70,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 };
 
