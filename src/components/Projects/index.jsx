@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { motion } from "framer-motion";
 import TBimage from "../../assets/images/tb.png";
 
@@ -27,12 +26,9 @@ const Projects = () => {
       <div className="container mx-auto">
         <h2 className="text-3xl font-semibold text-center mb-6">Projetos</h2>
         <div className="flex justify-center">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <motion.div
               key={project.name}
-              //initial={{ opacity: 0, y: 50 }}
-              //animate={{ opacity: 1, y: 0 }}
-              //transition={{ delay: index * 0.2 }}
               className="border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-2/3 md:w-1/3 lg:w-1/3"
             >
               <img
