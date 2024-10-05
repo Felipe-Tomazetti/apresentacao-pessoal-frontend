@@ -17,7 +17,7 @@ const SocialLinks = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-800 text-white text-center">
+    <section className="py-12 bg-gradient-to-r from-blue-500 to-transparent text-white text-center">
       <div className="container mx-auto">
         <h2 className="text-3xl font-semibold mb-6">Se conecte comigo!</h2>
         <div className="flex justify-center space-x-6">
