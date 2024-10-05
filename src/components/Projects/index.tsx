@@ -33,7 +33,7 @@ const Projects = () => {
               //initial={{ opacity: 0, y: 50 }}
               //animate={{ opacity: 1, y: 0 }}
               //transition={{ delay: index * 0.2 }}
-              className="border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-1/3"
+              className="border border-gray-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-2/3 md:w-1/3 lg:w-1/3"
             >
               <img
                 src={project.image}

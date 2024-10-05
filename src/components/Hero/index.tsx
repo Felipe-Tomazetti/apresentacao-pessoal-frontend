@@ -14,10 +14,6 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Felipe Tomazetti
           </h1>
-          <p className="text-lg md:text-xl font-light max-w-2xl mx-auto mb-8">
-            I am a passionate developer creating modern web experiences with
-            clean code and a focus on UI/UX.
-          </p>
         </motion.div>
 
         <motion.div
