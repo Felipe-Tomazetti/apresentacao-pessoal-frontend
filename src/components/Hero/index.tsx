@@ -3,21 +3,8 @@ import ProfilePicture from "../../assets/images/profile-image.jpg";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-center py-16 md:py-24">
+    <section className="bg-gradient-to-r from-blue-500 to-transparent text-white text-center py-16 md:py-24 rounded-lg">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="md:w-1/3"
-        >
-          <img
-            src={ProfilePicture}
-            alt="Your Name"
-            className="rounded-full w-40 h-40 object-cover mx-auto mb-6 md:mb-0"
-          />
-        </motion.div>
-
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,6 +18,19 @@ const Hero = () => {
             I am a passionate developer creating modern web experiences with
             clean code and a focus on UI/UX.
           </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="md:w-1/3"
+        >
+          <img
+            src={ProfilePicture}
+            alt="Your Name"
+            className="rounded-full w-41 h-41 object-cover mx-auto mb-6 md:mb-0"
+          />
         </motion.div>
       </div>
     </section>

@@ -13,7 +13,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-transparent to-black py-8 ">
+    <section className="bg-gradient-to-l from-blue-500 to-transparent py-8 mt-2">
       <div className="container mx-auto">
         <h2 className="text-3xl font-semibold text-center mb-6">Projetos</h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

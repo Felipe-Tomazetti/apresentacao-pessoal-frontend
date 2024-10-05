@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import StackIcon from "tech-stack-icons";
+import { SocialIcon } from "react-social-icons";
 
-export const SocialLinks = () => {
+const SocialLinks = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/felipe-tomazetti/",
-      icon: <StackIcon name="github" style={{ width: 30, height: 30 }} />,
+      icon: <SocialIcon network="linkedin" style={{ width: 30, height: 30 }} />,
     },
     {
       name: "GitHub",
@@ -28,6 +29,7 @@ export const SocialLinks = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
+              whileHover={{ scale: 1.1 }}
               className="text-xl hover:scale-105 transform transition-transform flex items-center gap-2"
             >
               {link.icon} {link.name}
@@ -38,3 +40,5 @@ export const SocialLinks = () => {
     </section>
   );
 };
+
+export default SocialLinks;
