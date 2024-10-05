@@ -29,7 +29,7 @@ const Hero = () => {
           <img
             src={ProfilePicture}
             alt="Your Name"
-            className="rounded-full w-41 h-41 object-cover mx-auto mb-6 md:mb-0"
+            className="rounded-full w-36 h-36 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-52 lg:h-52 object-cover mx-auto mb-4 md:mb-0"
           />
         </motion.div>
       </div>
